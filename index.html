@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Simple tic tac toe game using HTML, CSS and javascript</title>
+    <link rel="stylesheet" href="C:\Users\shiva\OneDrive\Documents\Shiv\Tic tac Toe\CSS\style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <!-- A simple guide to creating a tic tac toe game
+        # To create a simple tic tac toe game we need some things
+        1. A 3 x 3 Tic tac toe board
+        2. X or O to play as users
+        3. A Restart button
+        4. Display who wins the game-->
+
+    <!-- Board Design
+          |    |
+      ___|____|____
+        |     |
+    ___|_____|_____
+      |     |
+     |     |      -->
+
+     <section>
+       <!-- There should be three rows and three columns -->
+       <h2>Tic Tac Toe</h2>
+       <div class="box-model" id='board'>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+         <div class="cell" data-cell></div>
+       </div>
+       <h2 class="status"></h2>
+       <div class="winning-message" id="winningMessage">
+            <div id="winningMessageText"></div>
+       </div>
+       <button type="button" name="Restart" class="Restart" id="restartButton">Restart</button>
+     </section>
+     <script type="text/javascript" src="C:\Users\shiva\OneDrive\Documents\Shiv\Tic tac Toe\Javascript\function.js"></script>
+  </body>
+</html>

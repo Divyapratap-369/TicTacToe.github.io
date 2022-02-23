@@ -1,0 +1,76 @@
+body{
+  background-color: #219F94;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+}
+h2{
+  text-align: center;
+  text-decoration-color: white;
+  color: white;
+}
+section{
+  text-align: center;
+}
+.box-model{
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  width: 20%;
+  margin: 5% auto 5% auto;
+}
+.cell{
+  width: 6.25rem;
+  height: 6.25rem;
+  cursor: pointer;
+  border: 2.5px solid white;
+}
+/* Removing the side borders to make it lokk more like tic tac toe*/
+/* Removing the top borders */
+.cell:nth-child(1),.cell:nth-child(2),.cell:nth-child(3){
+  border-top: none;
+}
+/* Removing the left borders */
+.cell:nth-child(1),.cell:nth-child(4),.cell:nth-child(7){
+  border-left: none;
+}
+/* Removing the bottom borders */
+.cell:nth-child(7),.cell:nth-child(8),.cell:nth-child(9){
+  border-bottom: none;
+}
+/* Removing the right borders */
+.cell:nth-child(3),.cell:nth-child(6),.cell:nth-child(9){
+  border-right: none;
+}
+/* This will make sure that no hover effect is shown if the cell is already filled
+either with 'X' or 'O' */
+.cell.x,.cell.circle{
+  cursor: not-allowed;
+}
+
+/* Button */
+.Restart{
+  background-color: #EEE6CE;
+  color: #313552;
+  font-weight: bolder;
+  border: none;
+  padding: 10px 10px;
+  border-radius: 10px;
+  box-shadow: 2px 5px black;
+}
+.Restart:hover{
+  background-color: #2EB086;
+  color: white;
+  cursor: pointer;
+  box-shadow: 2px 5px black;
+}
+.Restart:active{
+  transform: translateY(4px);
+}
+
+/* Media Query */
+@media screen and (max-width: 550px) {
+  .box-model,.cell{
+    width: 100%;
+  }
+  .box-model{
+    margin: 10% auto 10% auto;
+  }
+}
