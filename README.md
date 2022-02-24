@@ -1,2 +1,2 @@
 # TicTacToe.github.io
-Tic Tac Toe
+A simple tic tac toe game using html 5, css and javascript 
