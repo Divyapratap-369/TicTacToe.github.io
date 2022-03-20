@@ -69,6 +69,21 @@ either with 'X' or 'O' */
 .cell:not(.x).circle {
 	background: radial-gradient(var(--color-set) 60%, transparent 60%);
 }
+#winningMessage {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: var(--color-set);
+	justify-content: center;
+	align-items: center;
+	color: white;
+	font-size: 5rem;
+	font-family: 'Courier New', Courier, monospace;
+	flex-direction: column;
+}
 /* Button */
 .Restart{
   background-color: #EEE6CE;
